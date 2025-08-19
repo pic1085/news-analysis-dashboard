@@ -34,7 +34,6 @@
 - **Cheerio 1.0.0**: HTML 파싱
 
 ### External Services
-- **AI Analysis Server**: `http://210.119.33.7:4610/predict`
 - **CORS Proxies**: 다양한 프록시 서비스 활용
 - **RSS Feeds**: SBS, BBC 등 주요 언론사 피드
 
