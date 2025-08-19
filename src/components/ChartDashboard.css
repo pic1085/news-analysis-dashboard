@@ -1,0 +1,147 @@
+.chart-dashboard {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.dashboard-title {
+  margin: 0;
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.chart-selector {
+  display: flex;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.chart-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: #6c757d;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.chart-button:hover {
+  background: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+}
+
+.chart-button.active {
+  background: #007bff;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
+}
+
+.chart-icon {
+  font-size: 16px;
+}
+
+.chart-label {
+  font-weight: 500;
+}
+
+.chart-content {
+  margin-bottom: 20px;
+}
+
+.chart-description {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  border-left: 4px solid #007bff;
+}
+
+.description-content h4 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.description-content p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .chart-dashboard {
+    padding: 16px;
+  }
+  
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .dashboard-title {
+    font-size: 20px;
+  }
+  
+  .chart-selector {
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+  
+  .chart-button {
+    flex-shrink: 0;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  
+  .chart-icon {
+    font-size: 14px;
+  }
+  
+  .chart-description {
+    padding: 12px;
+  }
+  
+  .description-content h4 {
+    font-size: 14px;
+  }
+  
+  .description-content p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-selector {
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .chart-button {
+    justify-content: center;
+    width: 100%;
+  }
+}
